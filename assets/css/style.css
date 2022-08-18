@@ -27,9 +27,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   font-family: "Roboto", sans-serif;
 }
 
-p, li {
-  font-size: 2.4vmin;
-}
+
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -512,8 +510,17 @@ section {
 }
 .section-title p {
   margin-bottom: 0;
-  font-size: 2.4vmin;
+  margin-left: 5%;
+  margin-right: 5%;
 }
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .section-title p {font-size: 20px;}
+  p {font-size: 20px;}
+}
+
+
 
 /*--------------------------------------------------------------
 # Breadcrumbs
@@ -942,27 +949,27 @@ section {
 /*--------------------------------------------------------------
 # Service Details
 --------------------------------------------------------------*/
-.service-details {
+.slidingbox-details {
   padding-bottom: 10px;
 }
-.service-details .card {
+.slidingbox-details .card {
   border: 0;
   padding: 0 30px;
   margin-bottom: 60px;
   position: relative;
 }
-.service-details .card-img {
+.slidingbox-details .card-img {
   width: calc(100% + 60px);
   margin-left: -30px;
   overflow: hidden;
   z-index: 9;
   border-radius: 0;
 }
-.service-details .card-img img {
+.slidingbox-details .card-img img {
   max-width: 100%;
   transition: all 0.3s ease-in-out;
 }
-.service-details .card-body {
+.slidingbox-details .card-body {
   z-index: 10;
   background: #fff;
   border-top: 4px solid #fff;
@@ -971,35 +978,35 @@ section {
   margin-top: -60px;
   transition: 0.3s;
 }
-.service-details .card-title {
+.slidingbox-details .card-title {
   font-weight: 700;
   text-align: center;
   margin-bottom: 20px;
 }
-.service-details .card-title a {
+.slidingbox-details .card-title a {
   color: #1e4356;
   transition: 0.3s;
 }
-.service-details .card-text {
+.slidingbox-details .card-text {
   color: #5e5e5e;
 }
-.service-details .read-more a {
+.slidingbox-details .read-more a {
   color: #777777;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 12px;
   transition: 0.3s;
 }
-.service-details .read-more a:hover {
+.slidingbox-details .read-more a:hover {
   color: #68A4C4;
 }
-.service-details .card:hover img {
+.slidingbox-details .card:hover img {
   transform: scale(1.1);
 }
-.service-details .card:hover .card-body {
+.slidingbox-details .card:hover .card-body {
   border-color: #68A4C4;
 }
-.service-details .card:hover .card-body .card-title a {
+.slidingbox-details .card:hover .card-body .card-title a {
   color: #68A4C4;
 }
 
@@ -1101,19 +1108,17 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
-.portfolio {
+
+.slidingbox {
   padding-bottom: 60px;
 }
-.portfolio #portfolio-flters {
+.slidingbox #slidingbox-flters {
   padding: 0;
   margin: 0 0 35px 0;
   list-style: none;
   text-align: center;
 }
-.portfolio #portfolio-flters li {
+.slidingbox #slidingbox-flters li {
   cursor: pointer;
   margin: 0 12px 5px 12px;
   display: inline-block;
@@ -1126,11 +1131,11 @@ section {
   border-bottom: 2px solid #fff;
   font-family: "Roboto", sans-serif;
 }
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+.pslidingbox #slidingbox-flters li:hover, .slidingbox #slidingbox-flters li.filter-active {
   border-color: #68A4C4;
   color: #68A4C4;
 }
-.portfolio .portfolio-item {
+.slidingbox .slidingbox-item {
   background: #1e4356;
   overflow: hidden;
   min-height: 200px;
@@ -1138,10 +1143,10 @@ section {
   border-radius: 4px;
   margin: 0 0 30px 0;
 }
-.portfolio .portfolio-item img {
+.slidingbox .slidingbox-item img {
   transition: all 0.3s ease-in-out;
 }
-.portfolio .portfolio-item .portfolio-info {
+.slidingbox .slidingbox-item .slidingbox-info {
   opacity: 0;
   position: absolute;
   transition: all 0.3s linear;
@@ -1150,24 +1155,24 @@ section {
   left: 0;
   right: 0;
 }
-.portfolio .portfolio-item .portfolio-info h3 {
+.slidingbox .slidingbox-item .slidingbox-info h3 {
   font-size: 22px;
   color: #fff;
   font-weight: bold;
 }
-.portfolio .portfolio-item .portfolio-info a i {
+.slidingbox .slidingbox-item .slidingbox-info a i {
   color: rgba(255, 255, 255, 0.6);
   font-size: 28px;
   transition: 0.3s;
 }
-.portfolio .portfolio-item .portfolio-info a i:hover {
+.slidingbox .slidingbox-item .slidingbox-info a i:hover {
   color: white;
 }
-.portfolio .portfolio-item:hover img {
+.slidingbox .slidingbox-item:hover img {
   opacity: 0.6;
   transform: scale(1.1);
 }
-.portfolio .portfolio-item:hover .portfolio-info {
+.slidingbox .slidingbox-item:hover .slidingbox-info {
   opacity: 1;
   top: calc(50% - 30px);
 }
@@ -1175,54 +1180,54 @@ section {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
-.portfolio-details {
+.slidingbox-details {
   padding-top: 40px;
 }
-.portfolio-details .portfolio-details-slider img {
+.slidingbox-details .slidingbox-details-slider img {
   width: 100%;
 }
-.portfolio-details .portfolio-details-slider .swiper-pagination {
+.slidingbox-details .slidingbox-details-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.slidingbox-details .slidingbox-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
   opacity: 1;
   border: 1px solid #68A4C4;
 }
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.slidingbox-details .slidingbox-details-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #68A4C4;
 }
-.portfolio-details .portfolio-info {
+.slidingbox-details .slidingbox-info {
   padding: 30px;
   box-shadow: 0px 0 30px rgba(30, 67, 86, 0.08);
 }
-.portfolio-details .portfolio-info h3 {
+.slidingbox-details .slidingbox-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #eee;
 }
-.portfolio-details .portfolio-info ul {
+.slidingbox-details .slidingbox-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
-.portfolio-details .portfolio-info ul li + li {
+.slidingbox-details .slidingbox-info ul li + li {
   margin-top: 10px;
 }
-.portfolio-details .portfolio-description {
+.slidingbox-details .slidingbox-description {
   padding-top: 30px;
 }
-.portfolio-details .portfolio-description h2 {
+.slidingbox-details .slidingbox-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
-.portfolio-details .portfolio-description p {
+.slidingbox-details .slidingbox-description p {
   padding: 0;
 }
 

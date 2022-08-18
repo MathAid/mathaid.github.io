@@ -19,9 +19,7 @@ for (var i = 0; i < bubblyButtons.length; i++) {
 (function() {
   "use strict";
 
-  /**
-   * Easy selector helper function
-   */
+
   const select = (el, all = false) => {
     el = el.trim()
     if (all) {
@@ -31,9 +29,7 @@ for (var i = 0; i < bubblyButtons.length; i++) {
     }
   }
 
-  /**
-   * Easy event listener function
-   */
+
   const on = (type, el, listener, all = false) => {
     let selectEl = select(el, all)
     if (selectEl) {
@@ -45,16 +41,11 @@ for (var i = 0; i < bubblyButtons.length; i++) {
     }
   }
 
-  /**
-   * Easy on scroll event listener 
-   */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
   }
 
-  /**
-   * Scrolls to an element with header offset
-   */
+
   const scrollto = (el) => {
     let header = select('#header')
     let offset = header.offsetHeight
