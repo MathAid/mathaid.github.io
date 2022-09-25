@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Unit 4 - Pre-calculus 11</title>
+  <title>Unit 5 - Pre-calculus 11</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -128,7 +128,7 @@
     <div class="container">
 
       <div class="section-title">
-        <h3>Converting general form to standard form (vertex form) example: <b>f(x) = x<sup>2</sup> + 4x + 3</b></h3>
+        <h3>Solving Quadratic Equation with Factoring Example: x<sup>2</sup> + 5x + 6 = 0</h3>
       </div>
 
     
@@ -137,9 +137,9 @@
           <img src="../assets/img/step1.png" class="img-fluid" alt="">
         </div>
         <div class="col-md-7 pt-5 order-2 order-md-1">
-          <h3>Find the perfect square (create the perfect trinomial</h3>
+          <h3>Factor the Equation</h3>
           <p class="fst-italic">
-            In this case, we can ignore 3 and just look at x<sup>2</sup> + 4x. What number can make x<sup>2</sup> + 4x a perfect trinomial? We can turn it into f(x) = (x<sup>2</sup> + 4x + 4 - 4) + 3 which would be f(x) = (x<sup>2</sup> + 4x + 4) - 4 + 3.
+            We can just ignore the zero for now and factor x<sup>2</sup> + 5x + 6 = 0. <br> x<sup>2</sup> + 5x + 6 = 0 --> (x + 3)(x + 2) = 0
           </p>
 
       
@@ -151,47 +151,63 @@
           <img src="../assets/img/step2.png" class="img-fluid" alt="">
         </div>
         <div class="col-md-7 pt-5">
-          <h3>Fact the perfect trinomial</h3>
-          <p>Since we created the perfect trinomial, we have to now factor it and turn it into vertex form. We would have to turn f(x) = (x<sup>2</sup> + 4x + 4) - 4 + 3 into <b>f(x) = (x + 2)<sup>2</sup> - 1</b></p>
+          <h3>Split the equation</h3>
+          <p>(x + 3)(x + 2) = 0<br>x + 3 = 0 and x + 2 = 0</p>
+        </div>
+
+
+        
+      <div class="row" data-aos="fade-up">
+        <div class="col-md-5 order-1 order-md-2">
+          <img src="../assets/img/step3.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-md-7 pt-5 order-2 order-md-1">
+          <h3>Solve the equation</h3>
+          <p>
+            So for x + 3 = 0, we can just move 3 to the other side which makes it x = -3. Same for the other equation, x + 2 = 0 turns into x = -2.
+          </p>
+
+          <p>The two solutions to this equation would be -2, and -3.</p>
         </div>
       </div>
 
 
+     
 
       <div class="section-title">
         <br>
         <br>
         <h4>Practice Questions</h4>
-        <p>What are the vertex for each equation?</p>
+        <p>What are the solution(s) to the quadratic equations?</p>
     
     
-        <p id="unit4q1"><b>1.</b> h(x) = x<sup>2</sup> - 8x + 15</p>
+        <p id="unit5q1"><b>1.</b> x<sup>2</sup> - 4x + 3 = 0</p>
         <br>
-        <button class="bubbly-button" onclick="unit4Practice1()">Reveal Answer</button>
+        <button class="bubbly-button" onclick="unit5Practice1()">Reveal Answer</button>
     
         <script>
-          function unit4Practice1(){
-            document.getElementById("unit4q1").innerHTML = "<b>1.</b> h(x) = x<sup>2</sup> - 8x + 15<br>h(x) = (x<sup>2</sup> - 8x + 16 - 16) + 15<br>h(x) = (x - 4)<sup>2</sup> - 1<br><b>(4, -1)"
+          function unit5Practice1(){
+            document.getElementById("unit5q1").innerHTML = "<b>1.</b> x<sup>2</sup> - 4x + 3 = 0<br>(x + 4)(x - 1) = 0<br><b>-4, 1"
           }
         </script>
     
-      <p id="unit4q2"><b>2.</b> m(x) = 3x<sup>2</sup> - 18x + 25</p>
+      <p id="unit5q2"><b>2.</b> x<sup>2</sup> + x + 12 = 0</p>
       <br>
-      <button class="bubbly-button" onclick="unit4Practice2()">Reveal Answer</button>
+      <button class="bubbly-button" onclick="unit5Practice2()">Reveal Answer</button>
     
       <script>
-        function unit4Practice2(){
-          document.getElementById("unit4q2").innerHTML = "<b>2.</b> m(x) = 3x<sup>2</sup> - 18x + 25<br>m(x) = 3(x<sup>2</sup> - 6) + 25<br>m(x) = 3(x<sup>2</sup> - 6 + 9 - 9) + 25<br>m(x) = 3(x<sup>2</sup> - 6 + 9) + 25 - 27<br>m(x) = 3(x - 3)<sup>2</sup> - 2<br><b>(3, -2)"
+        function unit5Practice2(){
+          document.getElementById("unit5q2").innerHTML = "<b>2.</b> x<sup>2</sup> + x + 12 = 0<br>(y + 4)(y - 3) = 0<br><b>-4, 3"
         }
       </script>
     
-      <p id="unit4q3"><b>3.</b> p(x) = 1/2x<sup>2</sup> - 3x + 4</p>
+      <p id="unit5q3"><b>3.</b> x<sup>3</sup> - 3x = 2x<sup>2</sup></p>
       <br>
-      <button class="bubbly-button" onclick="unit4Practice3()">Reveal Answer</button>
+      <button class="bubbly-button" onclick="unit5Practice3()">Reveal Answer</button>
     
       <script>
-        function unit4Practice3(){
-          document.getElementById("unit4q3").innerHTML = "<b>3.</b> p(x) = 1/2x<sup>2</sup> - 3x + 4<br>p(x) = 1/2(x<sup>2</sup> - 6x) + 4<br>p(x) = 1/2(x<sup>2</sup> - 6x + 9) - 9/2 + 4<br>p(x) = 1/2(x - 3)<sup>2</sup> - 1/2<br><b>(3, -1/2)"
+        function unit5Practice3(){
+          document.getElementById("unit5q3").innerHTML = "<b>3.</b> x<sup>3</sup> - 3x = 2x<sup>2</sup><br>x<sup>3</sup> - 3x - 2x<sup>2</sup> = 0<br>x(x<sup>2</sup> -2x - 3) = 0<br>x(x-3)(x+1) = 0<br><b>0, 3, -1"
         }
       </script>
     
@@ -203,11 +219,7 @@
 
 
 
-
-
-
-
-<!-- ======= 4.2 ======= -->
+<!-- ======= 5.2 ======= -->
 <section class="features">
   <div class="container">
 
@@ -215,8 +227,8 @@
     </div>
 
     <div class="section-title">
-      <h2>4.2 - Finding the Vertex of a Parabola</h2>
-      <p>Of course, there are other options besides needing to convert equations all the time. In fact, during unit 4.2, we will be learning the short formulas we can use to find the vertex.</p> <br><br>
+      <h2>5.2 - The Quadratic Forumla</h2>
+      <p>This is probably the most important formula we will ever learn in high school. We will be using this forumla quite a lot even outside of pre-calculus. It is the fastest way to calculate the solution to quadratic equation.</p> <br><br>
  
     </div>
 
@@ -227,12 +239,71 @@
 
     <div class="row">
       <div class="col-lg-6 video-box">
-        <img src="../assets/img/unit4vertexformula.jpg" class="img-fluid" alt="">
-        <a target="_blank" href="https://www.youtube.com/watch?v=V2udel2WylU&t=76s&ab_channel=BrianMcLogan" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+        <img src="../assets/img/unit5quadraticformula.jpg" class="img-fluid" alt="">
+        <a target="_blank" href="https://www.youtube.com/watch?v=IlNAJl36-10&ab_channel=TheOrganicChemistryTutor" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
       </div>
 
       <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
-          <p class="description">Video from TheOrganicChemistryTutor on how to convert standard form to general form (vertex form).</p>
+          <p class="description">Video from TheOrganicChemistryTutor on using the quadratic formula.</p>
+
+      </div>
+    </div>
+
+  </div>
+</section><!-- End video Section -->
+
+
+
+<section class="features">
+  <div class="container">
+
+    <div class="section-title">
+    </div>
+
+    <div class="section-title">
+ 
+      <p>A list of practice problems will be given later on where you may practice using any method to solve quadratic equations.</p> <br><br>
+    
+    </div>
+    <br>
+ 
+    </div>
+
+
+
+
+
+
+
+
+
+
+<!-- ======= 5.3 ======= -->
+<section class="features">
+  <div class="container">
+
+    <div class="section-title">
+    </div>
+
+    <div class="section-title">
+      <h2>5.3 - Solving Quadratic Equation (Square root property)</h2>
+      <p>Solving quadratic equations don't always have to be factoring or using the quadratic fomrula! You may also use the square root property which we encoutered before during unit 1. Rather than factoring or plugging the numbers into an equation, this method allows us to use square roots to solve. </p> <br><br>
+ 
+    </div>
+
+<!-- ======= end of feature ======== -->
+
+<section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-6 video-box">
+        <img src="../assets/img/unit5square.jpg" class="img-fluid" alt="">
+        <a target="_blank" href="https://www.youtube.com/watch?v=55G8037gsKY&ab_channel=KhanAcademy" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+      </div>
+
+      <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+          <p class="description">KhanAcademy on how to solve quadratic equations with the square root property</p>
 
       </div>
     </div>
@@ -243,50 +314,6 @@
 
 
 
-<div class="section-title">
-  <br>
-  <br>
-  <h4>Practice Questions</h4>
-  <p>What are the vertex for each equation?</p>
-
-
-  <p id="unit4q4"><b>1.</b> j(x) = 3x<sup>2</sup> + 24x + 30</p>
-  <br>
-  <button class="bubbly-button" onclick="unit4Practice4()">Reveal Answer</button>
-
-  <script>
-    function unit4Practice4(){
-      document.getElementById("unit4q4").innerHTML = "<b>1.</b> j(x) = 3x<sup>2</sup> + 24x + 30<br><b>(-4, -18)"
-    }
-  </script>
-
-<p id="unit4q5"><b>2.</b> l(x) = -2x<sup>2</sup> + 12x - 17</p>
-<br>
-<button class="bubbly-button" onclick="unit4Practice5()">Reveal Answer</button>
-
-<script>
-  function unit4Practice5(){
-    document.getElementById("unit4q5").innerHTML = "2.</b> l(x) = -2x<sup>2</sup> + 12x - 17<br><b>(3, 1)"
-  }
-</script>
-
-<p id="unit4q6"><b>3.</b> n(x) = 2x<sup>2</sup> - 5x - 3</p>
-<br>
-<button class="bubbly-button" onclick="unit4Practice6()">Reveal Answer</button>
-
-<script>
-  function unit4Practice6(){
-    document.getElementById("unit4q6").innerHTML = "<b>3.</b> n(x) = 2x<sup>2</sup> - 5x - 3<br><b>(5/4, -49/8)"
-  }
-</script>
-
-</div>
-
-
-
-
-
-
 
 
 
@@ -295,13 +322,86 @@
   <br>
   <h4>Practice Questions</h4>
   
-  <p>This chapter is a bit shorter than others but here are some practice problems for using the vertex formula as well as converting general to standard.</p>
+  <p>You may try out different methods that were taught during this unit.</p>
   <br>
-  <button class="bubbly-button"  onclick=" window.open('https://drive.google.com/file/d/1R2yPm3rDyggwFIajBNpBugtS7-c3uln_/view?usp=sharing','_blank')">Click Here</button>
+  <button class="bubbly-button"  onclick=" window.open('https://www.mcpsmt.org/cms/lib/MT01001940/Centricity/Domain/577/Apr%2025%20wkst%20Solving%20Quadratic%20Equations%20Using%20All%20Methods.pdf','_blank')">Click Here</button>
   </div>
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ======= 5.4 ======= -->
+<section class="features">
+  <div class="container">
+
+    <div class="section-title">
+    </div>
+
+    <div class="section-title">
+      <h2>5.4 - Discriminant</h2>
+      <p>As you may have noticed, some quadratic equations will have varying amounts of solutions ranging from 0 - 2. The discriminant is a value that can be used to determine whether a quadratic equation has 0 real solution, 1 real solution or 2 real solutions.</p> <br><br>
+ 
+    </div>
+
+<!-- ======= end of feature ======== -->
+
+<section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-6 video-box">
+        <img src="../assets/img/unit5discriminant.jpg" class="img-fluid" alt="">
+        <a target="_blank" href="https://www.youtube.com/watch?v=6fU9ZgwbU74&ab_channel=TheOrganicChemistryTutor" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+      </div>
+
+      <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+          <p class="description">TheOrganicChemistryTutor on discriminant.</p>
+
+      </div>
+    </div>
+
+  </div>
+</section><!-- End video Section -->
+
+
+
+
+
+
+
+<div class="section-title">
+  <br>
+  <br>
+
   
+  <p>Here are the solutions visually if you were to graph these quadratic equations.</p>
+  <br>
+ <img src="../assets/img/unit5discriminant2.png">
+  </div>
   
+
+
+
+
+
+
+
+
+
 
 
 
